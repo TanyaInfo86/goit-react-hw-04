@@ -1,0 +1,19 @@
+.image-card {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    overflow: hidden;
+    /* border-radius: 8px;
+    transition: transform 0.3s; */
+  }
+  
+  .image-card img {
+    width: 200px;
+    height: 200px;
+    display: block;
+  }
+  
+  /* .image-card:hover {
+    transform: scale(1.05);
+  } */
+  

@@ -1,7 +1,6 @@
 import Modal from 'react-modal';
 import { useEffect } from 'react';
-import './ImageModal.module.css';
-
+import styles from './ImageModal.module.css';
 Modal.setAppElement('#root');
 
 export default function ImageModal({ image, onClose }) {
@@ -22,13 +21,13 @@ export default function ImageModal({ image, onClose }) {
             isOpen
             onRequestClose={onClose}
             onClick={handleOverlayClick}
-            className="modal"
-            overlayClassName="overlay"
+            className={styles.modal}
+            overlayClassName={styles.overlay}
         >
             <img src={image.urls.regular} alt={image.alt_description} />
             <p>Автор: {image.user.name}</p>
             <p>Лайки: {image.likes}</p>
-            {image.description && <p>Опис: {image.description}</p>}
+            {image.description && <p className={styles.description}>Опис: {image.description}</p>}
         </Modal>
     );
 }

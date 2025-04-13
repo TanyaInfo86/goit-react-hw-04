@@ -31,7 +31,7 @@ function App() {
       const params = new URLSearchParams({
         query: searchQuery,
         page: pageNum,
-        per_page: 20,
+        per_page: 12,
         client_id: ACCESS_KEY,
       });
 

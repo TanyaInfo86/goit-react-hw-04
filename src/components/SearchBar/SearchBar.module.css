@@ -1,7 +1,8 @@
-.Block {
+.block {
 display: flex;
 justify-content: center;
 align-items: center;
+background-color: blue;
 }
 
 button {  
